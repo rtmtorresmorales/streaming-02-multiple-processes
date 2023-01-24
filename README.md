@@ -25,13 +25,21 @@ Read the output. Read the code.
 Try to figure out what's going on. 
 
 1. What libraries did we import?
+    sqlite3, time, multiprocessing, os, datetime, platform, sys
 1. Where do we set the task_duration?
+    variable task_duration
 1. How many functions are defined? 
+    7
 1. What are the function names? 
+    create_table, drop_table, insert_pet, process_one, process_two, process_three, recreate_database
 1. In general, what does each function do? 
+    create_table: creates a table names pets; drop_table: drops a table names pets; insert_pet: inserts a record in the pets table; process_one,    process_two, and process_three, insert_pet, adding specific pet information; recreate_database: drops and creates the pets table
 1. Where does the execution begin?
+    with "if name == "main":"
 1. How many processes do we start?
+    3
 1. How many records does each process insert?
+    2
 
 In this first run, we start 3 processes, 
 each inserting 2 records into a shared database 
@@ -95,15 +103,15 @@ Do a web search to find helpful videos on anything that seems confusing.
 Python has pretty helpful error messages. 
 When you get an error, read them carefully. 
 
-- What error do you get?
+- What error do you get?  AttributeError line 126
 - Can you tell what line it was executing when it failed?
-
+  AttributeError line 126
 
 ## Database Is Locked Error
 
 Do a web search on the sqlite3 'database is locked' error.
 
-- What do you learn?
+- What do you learn? Locked error occurs while performing two operations on a database at the same detail and connection or two users are running transactions on the same table,
 - Once a process fails, it crashes the main process and everything stops. 
 
 ## Deadlock
@@ -116,4 +124,5 @@ with no process able to move forward and make progress.
 
 ## Learn More
 
-Check out Wikipedia's article on deadlock and other sources to learn how to prevent and avoid locking issues in concurrent processes. 
+Check out Wikipedia's article on deadlock and other sources to learn how to prevent and avoid locking issues in concurrent processes.  Reference suggest when a deadlock scenario exists, set a new super-thread and follow that logic
+
