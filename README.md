@@ -126,3 +126,17 @@ with no process able to move forward and make progress.
 
 Check out Wikipedia's article on deadlock and other sources to learn how to prevent and avoid locking issues in concurrent processes.  Reference suggest when a deadlock scenario exists, set a new super-thread and follow that logic.
 
+UDP datagrams vs TCP protocol https://www.spiceworks.com/tech/networking/articles/tcp-vs-udp/#:~:text=Transmission%20control%20protocol%20(TCP)%20drives,are%20crucial%20to%20internet%20operations
+Some contrasts
+1.TCP is connection oriented while UDP is connectionless
+2. TCP leverages more error-checking mechanisms than UDP
+3. TCP sends data in a particular sequence, whereas there is no fixed order for UDP protocol
+4. UDP is faster and more efficient than TCP 
+5. Unlike UDP, TCP cannot be used for multicast or broadcast services 
+6.  TCP leverages flow control, while UDP does not
+7. UDP does not control congestion, whereas TCP implements congestion avoidance algorithms 
+8. TCP is more reliable than UDP 
+9. The TCP header is different from the UDP header 
+10. UDP is suitable for live and real-time data transmission, which TCP cannot support 
+
+
